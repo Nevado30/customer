@@ -1,0 +1,434 @@
+/* ========================== */
+/* GLOBAL                     */
+/* ========================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: linear-gradient(180deg, #efe4ff 0%, #e7e9ff 35%, #ffffff 100%);
+    color: #1d1d1d;
+}
+
+/* Texto base */
+h1, h2, h3 {
+    font-weight: 800;
+    color: #1d1d1d;
+    margin: 0;
+}
+
+p {
+    color: #3d3d3d;
+    line-height: 1.6;
+    margin: 0;
+}
+
+section {
+    padding: 80px 10%;
+    box-sizing: border-box;
+}
+
+/* ========================== */
+/* NAVBAR                     */
+/* ========================== */
+
+nav {
+    width: 100%;
+    padding: 18px 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(14px);
+    background: rgba(255, 255, 255, 0.7);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    box-sizing: border-box;
+}
+
+.nav-logo {
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    font-size: 0.95rem;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #1d1d1d;
+    font-weight: 500;
+    font-size: 0.96rem;
+    transition: .2s ease;
+}
+
+.nav-links a:hover {
+    color: #7c4dff;
+}
+
+.btn-header {
+    background: #7c4dff;
+    color: white !important;
+    padding: 9px 22px;
+    border-radius: 999px;
+    box-shadow: 0px 4px 14px rgba(124,77,255,0.35);
+    font-weight: 600;
+}
+
+/* ========================== */
+/* BOTONES                    */
+/* ========================== */
+
+.btn-primary {
+    display: inline-block;
+    margin-top: 28px;
+    padding: 14px 32px;
+    background: #7c4dff;
+    color: white;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: .2s;
+    border: none;
+}
+
+.btn-primary.big {
+    padding: 18px 40px;
+    font-size: 1.15rem;
+    box-shadow: 0px 10px 25px rgba(124, 77, 255, 0.35);
+}
+
+.btn-primary:hover {
+    background: #6a3be6;
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    display: inline-block;
+    padding: 12px 30px;
+    background: transparent;
+    border: 2px solid #7c4dff;
+    border-radius: 999px;
+    color: #7c4dff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .2s;
+}
+
+.btn-outline:hover {
+    background: #7c4dff;
+    color: white;
+}
+
+/* ========================== */
+/* HERO                       */
+/* ========================== */
+
+.hero {
+    padding: 130px 10% 100px;   /* extra arriba por el nav fijo */
+}
+
+.hero-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;                 /* acerca texto y mockup */
+}
+
+.hero-content {
+    max-width: 540px;
+}
+
+.hero-content h1 {
+    font-size: 3.2rem;
+}
+
+.hero-content p {
+    margin-top: 16px;
+    font-size: 1.12rem;
+}
+
+/* Contenedor del mockup */
+.hero-img {
+    flex-shrink: 0;
+}
+
+.hero-img-inner {
+    background: radial-gradient(circle at top left, #ffffff 0%, #f4eaff 40%, #e5e9ff 100%);
+    border-radius: 38px;
+    padding: 36px 30px;
+    box-shadow: 0 30px 70px rgba(56, 30, 114, 0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-img img {
+    width: 320px;
+    display: block;
+    animation: float 4s ease-in-out infinite;
+}
+
+/* Animación suave del mockup */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+/* ========================== */
+/* SECCIÓN PROBLEMA           */
+/* ========================== */
+
+.problem {
+    padding: 80px 10% 90px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.problem-left {
+    max-width: 520px;
+}
+
+.problem h2 {
+    font-size: 2.3rem;
+    margin-bottom: 18px;
+}
+
+.problem h2 span {
+    color: #7c4dff;
+}
+
+.problem ul {
+    list-style: none;
+    padding: 0;
+    margin: 24px 0;
+}
+
+.problem ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+    font-size: 1.02rem;
+}
+
+.problem ul li img {
+    width: 26px;
+    margin-right: 10px;
+}
+
+.problem-note {
+    margin-top: 18px;
+    background: #7c4dff;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 10px;
+    display: inline-block;
+    font-weight: 600;
+}
+
+.problem-img img {
+    width: 340px;
+    filter: drop-shadow(0px 10px 25px rgba(0,0,0,0.15));
+}
+
+/* ========================== */
+/* FEATURES                   */
+/* ========================== */
+
+.features {
+    margin-top: -10px;
+    padding-top: 40px;
+}
+
+.features h2 {
+    text-align: center;
+    font-size: 2.4rem;
+}
+
+.features .subtitle {
+    text-align: center;
+    margin-bottom: 45px;
+    font-size: 1.1rem;
+}
+
+.features-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 35px 30px;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    transition: .25s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 26px rgba(0,0,0,0.10);
+}
+
+.card img {
+    width: 55px;
+    margin-bottom: 15px;
+}
+
+/* ========================== */
+/* PRICING / PLANES           */
+/* ========================== */
+
+.plans h2 {
+    text-align: center;
+    font-size: 2.4rem;
+}
+
+.plans .subtitle {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.plans-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+}
+
+.plan-card {
+    background: white;
+    border-radius: 18px;
+    padding: 35px;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    transition: .25s ease;
+}
+
+.plan-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 26px rgba(0,0,0,0.10);
+}
+
+.plan-card h1 {
+    font-size: 2.2rem;
+}
+
+.plan-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 25px 0;
+    color: #444;
+}
+
+.plan-card li {
+    margin-bottom: 10px;
+}
+
+/* Plan popular */
+.popular {
+    border: 3px solid #7c4dff;
+    transform: scale(1.04);
+}
+
+.badge {
+    display: inline-block;
+    background: #7c4dff;
+    color: white;
+    padding: 5px 14px;
+    border-radius: 8px;
+    font-size: .85rem;
+    margin-bottom: 14px;
+}
+
+/* ========================== */
+/* DOWNLOAD SECTION           */
+/* ========================== */
+
+.download {
+    text-align: center;
+    padding-bottom: 140px;
+}
+
+.download h2 {
+    font-size: 2.4rem;
+}
+
+.download p {
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+/* ========================== */
+/* RESPONSIVE SIMPLE          */
+/* ========================== */
+
+@media (max-width: 900px) {
+
+    nav {
+        padding: 14px 6%;
+    }
+
+    section {
+        padding: 80px 6%;
+    }
+
+    .hero {
+        padding-top: 120px;
+    }
+
+    .hero-inner {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 28px;
+    }
+
+    .hero-img-inner {
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    .problem {
+        flex-direction: column;
+        text-align: center;
+        padding: 70px 6%;
+    }
+
+    .problem ul {
+        align-items: flex-start;
+    }
+
+    .problem ul li {
+        justify-content: center;
+    }
+
+    .problem-img img {
+        width: 260px;
+    }
+
+    .features-grid,
+    .plans-grid {
+        grid-template-columns: 1fr;
+    }
+}

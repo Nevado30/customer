@@ -1,0 +1,152 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section id="inicio" class="hero">
+  <div class="hero-inner">
+    <div class="hero-content">
+        <h1>Tu dinero, explicado como si fuera tu mejor amigo.</h1>
+        <p>La app moderna, sencilla e inteligente para entender tus ingresos, tus gastos y tu ahorro. 
+            Con una IA creada para tu estilo de vida.</p>
+        <a href="#descargar" class="btn-primary big">Descargar la App</a>
+    </div>
+
+    <div class="hero-img">
+        <div class="hero-img-inner">
+            <img src="/static/img/hero_phone.png" alt="Nevadito App">
+        </div>
+    </div>
+  </div>
+</section>
+
+<section class="problem">
+    <div class="problem-left">
+        <h2>Gastar es fácil. <span>Entender tu dinero… no tanto.</span></h2>
+        <ul>
+            <li>
+                <img src="/static/img/icon_expense.svg" alt="">
+                No sabes cuánto gastas realmente.
+            </li>
+            <li>
+                <img src="/static/img/icon_graph.svg" alt="">
+                Te quedas sin ahorros al final del mes.
+            </li>
+            <li>
+                <img src="/static/img/icon_empty.svg" alt="">
+                No tienes idea clara de tu dinero.
+            </li>
+            <li>
+                <img src="/static/img/icon_note.svg" alt="">
+                Apuntar gastos siempre da flojera.
+            </li>
+        </ul>
+        <p class="problem-note">Nevadito te lo muestra todo sin complicarte la vida.</p>
+    </div>
+
+    <div class="problem-img">
+        <img src="/static/img/ianevado.png" alt="Gráficos e IA de Nevadito">
+    </div>
+</section>
+
+
+
+<section id="funciones" class="features">
+    <h2>Funciones que hacen tu vida más fácil</h2>
+    <p class="subtitle">Todo lo necesario para manejar tus finanzas con claridad.</p>
+
+    <div class="features-grid">
+
+        <div class="card">
+            <img src="/static/img/icon_track.svg">
+            <h3>Registra ingresos y gastos</h3>
+            <p>Lleva un control claro de todo lo que entra y sale de tu bolsillo.</p>
+        </div>
+
+        <div class="card">
+            <img src="/static/img/icon_si.svg">
+            <h3>Asistente IA</h3>
+            <p>Pregúntale cosas como “¿En qué gasto más?” o “¿Estoy ahorrando bien?”</p>
+        </div>
+
+        <div class="card">
+            <img src="/static/img/icon_graph.svg">
+            <h3>Gráficos fáciles</h3>
+            <p>Visualiza tu comportamiento mensual con colores intuitivos.</p>
+        </div>
+
+        <div class="card">
+            <img src="/static/img/icon_secure.svg">
+            <h3>Datos seguros</h3>
+            <p>Todo queda guardado solo en tu dispositivo. No necesita internet.</p>
+        </div>
+
+        <div class="card">
+            <img src="/static/img/icon_fast.svg">
+            <h3>Ultra rápida</h3>
+            <p>Optimizada para Android, sin publicidad y muy ligera.</p>
+        </div>
+
+        <div class="card">
+            <img src="/static/img/icon_dark.svg">
+            <h3>Modo oscuro y claro</h3>
+            <p>Elige la vista que mejor se adapte a tu estilo.</p>
+        </div>
+
+    </div>
+</section>
+
+
+<section id="planes" class="plans">
+    <h2>Planes que se adaptan a ti</h2>
+    <p class="subtitle">Empieza gratis. Desbloquea funciones avanzadas cuando quieras.</p>
+
+    <div class="plans-grid">
+
+        <div class="plan-card">
+            <h3>Gratis</h3>
+            <h1>S/ 0</h1>
+            <ul>
+                <li>✓ Registro de ingresos</li>
+                <li>✓ Gráficos básicos</li>
+                <li>✓ IA limitada</li>
+                <li>✓ Modo claro/oscuro</li>
+            </ul>
+            <a href="#descargar" class="btn-outline">Empieza ahora</a>
+        </div>
+
+        <div class="plan-card popular">
+            <span class="badge">Más popular</span>
+            <h3>Nevadito Pro</h3>
+            <h1>S/ 9.90</h1>
+            <ul>
+                <li>✓ IA avanzada y completa</li>
+                <li>✓ Acceso Anticipado</li>
+                <li>✓ Exportar Excel/PDF</li>
+                <li>✓ Análisis de hábitos</li>
+                <li>✓ Registro por 1 año</li>
+            </ul>
+            <a href="#descargar" class="btn-outline">Obtener Pro</a>
+        </div>
+
+        <div class="plan-card">
+            <h3>Lifetime</h3>
+            <h1>S/ 39.90</h1>
+            <ul>
+                <li>✓ Acceso de por vida</li>
+                <li>✓ Todas las funciones Pro</li>
+                <li>✓ Acceso anticipado</li>
+                <li>✓ Soporte prioritario</li>
+            </ul>
+            <a href="#descargar" class="btn-outline">Comprar Lifetime</a>
+        </div>
+    </div>
+</section>
+
+<section id="descargar" class="download">
+    <h2>Descarga ahora Nevadito</h2>
+    <p>Controla tu dinero desde hoy.</p>
+    <a href="#" class="btn-primary">Descargar APK</a>
+</section>
+
+
+{% endblock %}
